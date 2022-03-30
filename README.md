@@ -9,7 +9,7 @@ Repo di riferimento per la parte **Frontend** del corso
 ## Consegna degli esercizi
 1. Create una fork del repo https://github.com/michelefenu/tnv-academy-VI 
 2. Clonatela in locale con `git clone url_repo`
-3. Quando avete finito `git add .`, `git commit -m "Il vostro messaggio"`, `git push`.
+3. Quando avete finito `git add file_da_aggiungere`, `git commit -m "Il vostro messaggio"`, `git push`.
 4. Aprite una Pull request verso il repository originale
 
 ## Link Vari
