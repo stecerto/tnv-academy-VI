@@ -1,6 +1,6 @@
 # TNV Academy - Junior Full Stack Developer Ed. VI
 
-Repo di riferimento per la parte **Frondend** del corso
+Repo di riferimento per la parte **Frontend** del corso
 
 ## Risorse
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) - fate riferimento a questo come fonte per tutte le informazioni
