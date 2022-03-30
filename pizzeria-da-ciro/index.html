@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <title>Pizzeria Da Ciro</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
+
+<head>
+    <title>Pizzeria Da Ciro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
         <h1>Pizzeria Da Ciro</h1>
-        <p>Pizze <i>speciali</i> ed <strong>economiche</strong>, per <b>tutte</b> le <span>esigenze</span></p>
+    </div>
 
-        <div>
-            <!-- MENU SECTION -->
-            <h2>Menù</h2>
+    <div class="claim">
+    <p>Pizze <i>speciali</i> ed <strong>economiche</strong>, per <b>tutte</b> le <span>esigenze</span></p>
+</div>
+    <div class="menu">
+        <!-- MENU SECTION -->
+        <h2>Menù</h2>
 
-            <h3>Pizze</h3>
-            <ul>
-                <li>Margherita 5€</li>
-                <li>Marinara 4€</li>
-                <li>Quattro Formaggi 10€</li>
-                <li>Capricciosa 9€</li>
-            </ul>
+        <h3>Pizze</h3>
+        <ul>
+            <li>Margherita 5€</li>
+            <li>Marinara 4€</li>
+            <li>Quattro Formaggi 10€</li>
+            <li>Capricciosa 9€</li>
+        </ul>
 
-            <h3>Pizze Speciali</h3>
-            <ul>
-                <li><a href="./pizze-speciali/michele-fenu/">Pizza Michele</a></li>
-            </ul>
+        <h3>Pizze Speciali</h3>
+        <ul>
+            <li><a href="./pizze-speciali/michele-fenu/">Pizza Michele</a></li>
+        </ul>
 
-            <h3>Pizze Economiche</h3>
+        <h3>Pizze Economiche</h3>
 
-            <h3>Dolci</h3>
+        <h3>Dolci</h3>
 
-            <h3>Bibite</h3>
-        </div>
+        <h3>Bibite</h3>
+    </div>
 
-        <h2>Contatti</h2>
-        <form action="ordina.php" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"><br>
-            <label for="cognome">Cognome:</label>
-            <input type="text" id="cognome" name="cognome"><br>
-            <label for="indirizzo">Indirizzo:</label>
-            <input type="text" id="indirizzo" name="indirizzo" /><br>
-            <label>Scrivi il tuo ordine</label><br>
-            <textarea rows="7" cols="36"></textarea>
+    <h2>Contatti</h2>
+    <form action="ordina.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome"><br>
+        <label for="indirizzo">Indirizzo:</label>
+        <input type="text" id="indirizzo" name="indirizzo" /><br>
+        <label>Scrivi il tuo ordine</label><br>
+        <textarea rows="7" cols="36"></textarea>
 
-            <fieldset>
-                <legend>Servizi Aggiuntivi</legend>
-                <input type="checkbox" id="posate" name="servizi"> Posate +15€<br>
-                <input type="checkbox" id="tagliata" name="servizi"> Pizza Pretagliata +0.5€<br>
-                <input type="checkbox" id="consegna" name="servizi"> Consegna rapida +5€<br>
-            </fieldset>
+        <fieldset>
+            <legend>Servizi Aggiuntivi</legend>
+            <input type="checkbox" id="posate" name="servizi"> Posate +15€<br>
+            <input type="checkbox" id="tagliata" name="servizi"> Pizza Pretagliata +0.5€<br>
+            <input type="checkbox" id="consegna" name="servizi"> Consegna rapida +5€<br>
+        </fieldset>
 
-            <fieldset>
-                <legend>Metodo di Pagamento</legend>
-                <input type="radio" id="paypal" name="metodo"> PayPal<br>
-                <input type="radio" id="contanti" name="metodo"> Contanti<br>
-                <input type="radio" id="satispay" name="metodo"> Satispay<br>
-            </fieldset>
+        <fieldset>
+            <legend>Metodo di Pagamento</legend>
+            <input type="radio" id="paypal" name="metodo"> PayPal<br>
+            <input type="radio" id="contanti" name="metodo"> Contanti<br>
+            <input type="radio" id="satispay" name="metodo"> Satispay<br>
+        </fieldset>
 
-            <input type="submit" value="Invia l'ordine">
-        </form>
+        <input type="submit" value="Invia l'ordine">
+    </form>
 
-    </body>
+</body>
+
 </html>
