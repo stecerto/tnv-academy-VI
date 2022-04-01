@@ -13,15 +13,35 @@
 
         
         <div>
+
+<html lang="it">
+
+<head>
+    <title>Pizzeria Da Ciro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Pizzeria Da Ciro</h1>
+        <span class="claim">Pizze speciali ed economiche, per tutte le esigenze</span>
+    </div>
+    <div class="container">
+        <div class="menu">
+
             <!-- MENU SECTION -->
-            <h2>Menù</h2>
+            <h2 class="underline">Menù</h2>
 
             <h3>Pizze</h3>
             <ul>
-                <li>Margherita 5€</li>
-                <li>Marinara 4€</li>
-                <li>Quattro Formaggi 10€</li>
-                <li>Capricciosa 9€</li>
+                <li>Margherita <span class="price">5€</span></li>
+                <li>Marinara <span class="price">4€</span></li>
+                <li>Quattro Formaggi <span class="price">10€</span></li>
+                <li>Capricciosa <span class="price">9€</span></li>
             </ul>
 
             <h3>Pizze Speciali</h3>
@@ -30,19 +50,30 @@
                 <li><a href="./pizze-speciali/stefano-certo/index.html">Pizza Stefano</a></li>
             </ul>
 
+
             <a href="./pizze-speciali/index.html">Tutte le nostre pizze speciali</a>
 
             <h3>Pizze Economiche</h3>
 
             <h3>Dolci</h3>
 
+
+
             <h3>Bibite</h3>
+            <ul>
+                <li>Coca-Cola <span class="price">3€</span></li>
+                <li>Birra <span class="price">4€</span></li>
+                <li>Vino della Casa <span class="price">4€</span></li>
+                <li>Acqua Frizzante <span class="price">5€</span></li>
+                <li>Acqua Naturale <span class="price">5€</span></li>
+            </ul>
         </div>
 
-        <h2>Contatti</h2>
+
+        <h2 class="underline">Contatti</h2>
         <form action="ordina.php" method="POST">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"><br>
+            <input type="text" id="nome" name="nome">
             <label for="cognome">Cognome:</label>
             <input type="text" id="cognome" name="cognome"><br>
             <label for="indirizzo">Indirizzo:</label>
@@ -66,6 +97,7 @@
 
             <input type="submit" value="Invia l'ordine">
         </form>
+    </div>
+</body>
 
-    </body>
 </html>
