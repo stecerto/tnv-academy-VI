@@ -394,7 +394,7 @@ maledici('Gastone', 'Paperone'); // Io ti maledico Gastone Paperone
 
 ### Hoisting, function declaration, e function expression
 
-È un procedimento per il quale JS "solleva" le dichiarazioni nel punto più alto del loro scope prima di eseguire il codice.
+L'hoisting è un procedimento per il quale JS "solleva" le dichiarazioni nel punto più alto del loro scope prima di eseguire il codice.
 
 ```javascript
 const nome = 'Paolino';
