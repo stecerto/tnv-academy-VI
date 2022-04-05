@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Collection</title>
+    </head>
+
+    <body>
+        <h1>Photos</h1>
+             
+       
+        <div id="divTitoli">
+            <ul id="lista">
+                <!-- Qui inseriremo i dati-->
+            </ul>
+        </div>
+        <script>
+            async function getImages(){  //otteniamo le immagini
+                const response = await fetch("https://jsonplaceholder.typicode.com/photos");
+                const data = await response.json()
+                createPhotoList(data);  // chiamo funzione per creare la lista
+            }
+
+            getImages()
+                .catch(err => console.log("Errore nella richiesta dati!!"));
+
+            function createPhotoList(photos){
+                const titoli = document.getElementById("divTitoli");
+                const lista = document.getElementById("lista");  
+                const ulElement = document.createElement("ul");              
+                
+                titoli.innerText = "";
+                
+                var i = 0;  // contatore
+                for(let photo of photos){  // prendo solo 30 risultati
+                                 
+                    i++
+                    if(i <= 30){
+                        //creo gli elementi HTML   
+                        const liElement = document.createElement("li");
+                        const h3Element = document.createElement("h3");
+                        const h4Element = document.createElement("h4");
+                        
+                        //inserisco nel tag h3 il titolo
+                        h3Element.innerText = photo.title;
+                        
+                        //inserisco nel tag h4 il link al file
+                        h4Element.innerHTML = `<a href="${photo.url}">Visualizza la foto: ${photo.id}</a>`;
+                        
+                        //inserisco gli elementi nella lista
+                        liElement.appendChild(h3Element);
+                        liElement.appendChild(h4Element);   
+                       
+                        //inserisco la lista dentro la lista non ordinata
+                        lista.appendChild(liElement);
+                       
+                        //inserisco il tutto nel div
+                        titoli.appendChild(lista);
+                    }else{
+                        break;
+                    }
+                }
+            }
+        </script>
+               
+    </body>
+
+</html>
